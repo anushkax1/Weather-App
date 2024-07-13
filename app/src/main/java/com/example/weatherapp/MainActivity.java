@@ -147,7 +147,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         mLocationManager.requestLocationUpdates(Location_Provider, MIN_TIME, MIN_DISTANCE, mLocationListner);
-
     }
 
     @Override
@@ -158,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
         {
             if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
             {
-                Toast.makeText(MainActivity.this,"Locationget Succesffully",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Locationget Succesfully",Toast.LENGTH_SHORT).show();
                 getWeatherForCurrentLocation();
             }
             else
